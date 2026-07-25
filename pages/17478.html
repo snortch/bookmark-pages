@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The video introduces Claude Code's new &quot;Workflows&quot; feature, describing it as ...</title>
+<meta name="description" content="The video introduces Claude Code's new &quot;Workflows&quot; feature, describing it as the most powerful release of the year. The feature allows users to write JavaScript">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, system-ui, Georgia, serif; max-width: 680px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.7; background: #fff; }
+.source-badge { display: inline-block; background: #f0f0f0; color: #666; font-size: 0.75em; padding: 3px 10px; border-radius: 12px; margin-bottom: 16px; text-decoration: none; }
+.source-badge:hover { background: #e0e0e0; }
+h1 { font-size: 1.5em; font-weight: 600; margin-bottom: 8px; line-height: 1.3; }
+.meta { color: #888; font-size: 0.85em; margin-bottom: 24px; }
+.summary { background: #f8f8f8; border-left: 3px solid #4A90D9; padding: 16px 20px; margin: 24px 0; font-size: 0.95em; border-radius: 0 4px 4px 0; }
+.summary h2 { font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; color: #4A90D9; margin-bottom: 8px; }
+.transcript { font-size: 1.05em; white-space: pre-wrap; margin-top: 24px; }
+.original-link { display: block; margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 0.85em; color: #4A90D9; text-decoration: none; }
+.original-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #eee; font-size: 0.75em; color: #aaa; }
+</style>
+</head>
+<body>
+<a class="source-badge" href="https://www.instagram.com/reel/DY7kRpiEnFa/">Instagram Reel</a>
+<h1>The video introduces Claude Code's new &quot;Workflows&quot; feature, describing it as ...</h1>
+<p class="meta">video transcript (enriched by ClaudeClaw)</p>
+
+<div class="summary">
+<h2>Summary</h2>
+<p>The video introduces Claude Code's new &quot;Workflows&quot; feature, describing it as the most powerful release of the year. The feature allows users to write JavaScript scripts (`workflows.js`) that programmatically call sub-agents in loops, sequences, or parallel and sequential orders. This eliminates the need for the main agent to directly deploy and control sub-agents and manage their context. Workflows can accept arguments (variables) for customization, such as setting a limit for pull requests (PRs) in a code review workflow. The speaker provides an example of a code review workflow where Claude Code retrieves a GitHub repository, sequentially calls sub-agents to review PRs, rates them, implements necessary fixes, and iterates through a set number of loops. Sub-agents can be forced to output structured schema, enabling programmatic chaining of their outputs as inputs to other agents. To enable the feature, users must type `/config` in the Claude Code chatbox and ensure dynamic workflows are enabled, then type &quot;workflow&quot; (which will appear as a rainbow) and describe the desired workflow. The generated `workflow.js` file and all associated metadata and outputs are permanently stored in the `.cloud` folder for auditing and observability. The speaker highlights that this allows agents to work within structured conditional and loop constructs without consuming excessive tokens. The video concludes by inviting viewers to the creator's school community for more in-depth courses on Claude Code features.</p>
+</div>
+
+<div class="transcript">Here's the transcript and summary of the video:
+
+TRANSCRIPT:
+[ON-SCREEN TEXT: !! CLAUDE CODE NEW !! WORKFLOWS FEATURE]
+Guys, the new Claude Code Workflows feature is insane. By far the most powerful Claude Code feature that they've released this year. I'm going to tell you guys exactly how to use it, how it works, and what you can use it for. First of all, the Workflows feature essentially allows you to write scripts that call sub-agents. This is super powerful because now your main agent doesn't have to deploy and control sub-agents and send them and receive context from them. It can instead write a workflows.js file, which is a script that can call sub-agents programmatically in loops, in sequence, and in any parallel or sequential order that you want, because the sub-agents are called by a script. You can also configure this script to accept different arguments, which are basically just variables that you pass to the script. For example, if you want to write a workflow to have sub-agents review and iterate on PRs, you can pass in a limit to how many PRs they do in that workflow as an argument, like 20 PRs. An example code review workflow could be that you pass the GitHub repository link to your Claude Code instance. It calls this workflow on that repository with a limit of 20 PRs to review. And then it sequentially calls sub-agents to review each PR, give it a rating, and then implement any fixes that are necessary, and it will actually go in a loop in cycles. And you can set limits to how many loops each sub-agents go through. You can also force sub-agents to output structured schema, which is how you actually chain them together programmatically and have one sub-agent's outputs chain into the other's inputs. To use the Workflows feature, type /config into your Claude Code chat box and make sure dynamic workflows are enabled. Then just type in the word &quot;workflow&quot; and it will turn into a little shiny rainbow, just like the Ultra Think word used to. And then just describe the workflow that you want Claude Code to write for you, and it will write that workflow to a workflow.js file. That workflow.js file is stored permanently in your .cloud folder, and each run of that workflow, all the metadata and outputs associated with that are also stored permanently for auditing and observability. There's a ton more nuances to this feature, but if you take one thing from this video, it's that now you can write scripts that call agents. So you can basically have agents work within structured if-else while or for loops that you wouldn't be able to do without consuming a ton more tokens using your Claude main instance as the kind of programmable controller of those sub-agents. If you want to learn more about all the amazing features that Claude Code has to offer, I have full video courses on almost all of them in my school community. The link is in my bio and I'd love to see you there.</div>
+
+<a class="original-link" href="https://www.instagram.com/reel/DY7kRpiEnFa/">View original on Instagram Reel &rarr;</a>
+
+<div class="footer">Auto-generated by ClaudeClaw bookmark enrichment</div>
+</body>
+</html>
