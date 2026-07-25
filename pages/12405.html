@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>If you want to use Claude, Codex, or Codex to run browser automations and you...</title>
+<meta name="description" content="If you want to use Claude, Codex, or Codex to run browser automations and you're tired of Playwright, then you need to check out Browser Harness. So think of Br">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, system-ui, Georgia, serif; max-width: 680px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.7; background: #fff; }
+.source-badge { display: inline-block; background: #f0f0f0; color: #666; font-size: 0.75em; padding: 3px 10px; border-radius: 12px; margin-bottom: 16px; text-decoration: none; }
+.source-badge:hover { background: #e0e0e0; }
+h1 { font-size: 1.5em; font-weight: 600; margin-bottom: 8px; line-height: 1.3; }
+.meta { color: #888; font-size: 0.85em; margin-bottom: 24px; }
+.summary { background: #f8f8f8; border-left: 3px solid #4A90D9; padding: 16px 20px; margin: 24px 0; font-size: 0.95em; border-radius: 0 4px 4px 0; }
+.summary h2 { font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; color: #4A90D9; margin-bottom: 8px; }
+.transcript { font-size: 1.05em; white-space: pre-wrap; margin-top: 24px; }
+.slide-card { background: #fafafa; border: 1px solid #e8e8e8; border-radius: 8px; padding: 20px; margin: 16px 0; position: relative; }
+.slide-number { position: absolute; top: 12px; right: 16px; background: #4A90D9; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8em; font-weight: 600; }
+.slide-content { font-size: 1em; line-height: 1.7; white-space: pre-wrap; }
+.caption-block { margin: 20px 0; padding: 16px 0; border-bottom: 1px solid #eee; }
+.caption-label { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin-bottom: 6px; }
+.original-link { display: block; margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 0.85em; color: #4A90D9; text-decoration: none; }
+.original-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #eee; font-size: 0.75em; color: #aaa; }
+</style>
+</head>
+<body>
+<a class="source-badge" href="https://www.instagram.com/reel/DYREjUcp7S3/?igsh=ZW43OTF4amliNjZ4">Instagram Reel</a>
+<h1>If you want to use Claude, Codex, or Codex to run browser automations and you...</h1>
+<p class="meta">video transcript (enriched by ClaudeClaw)</p>
+
+<div class="summary">
+<h2>Summary</h2>
+<p>If you want to use Claude, Codex, or Codex to run browser automations and you're tired of Playwright, then you need to check out Browser Harness. So think of Browser Harness as Playwright for LLMs that's also self-improving.</p>
+</div>
+
+<div class="transcript">If you want to use Claude, Codex, or Codex to run browser automations and you're tired of Playwright, then you need to check out Browser Harness. So think of Browser Harness as Playwright for LLMs that's also self-improving. And the way it does this is through a pretty clever architecture setup. So imagine you were having Browser Harness go on Amazon and scrape some competitors' stores. Well, every time it does a certain task on a certain website, it creates a skill for that task. And each time it executes that task, it updates the skill to make sure it's getting better at it every single time. And it's completely open source, so definitely check this out if you're looking for some sort of Playwright alternative.
+
+ON-SCREEN TEXT:
+The Playwright alternative for LLMs
+Browser Harness
+Connect an LLM directly to your real browser with a thin, editable CDP harness. For browser tasks where you complete freedom.
+One websocket to Chrome, nothing between. The agent writes what's missing during execution. The harness itself every run.
+- agent: wants to upload a file
+- agent-workspace/agent_helpers.py + helper missing
+|
+- agent writes it
+- agent-helpers.py + custom helper
+|
+- file uploaded
+You will never use the browser again.
+Setup prompt
+Paste into Claude or Codex
+Browser Use Cloud free tier: 3 concurrent browsers, proxies, captcha solving, and more. No card required.
+Architecture (~1k lines across 4 core files)
+- install.md -- first-time install and browser bootstrap
+- SKILL.md -- day-to-day usage
+- src/browser_harness/ -- protected core package
+- agent-workspace/agent_helpers.py -- helper code the agent edits
+- agent-workspace/domain-skills/ -- reusable site-specific skills the agent edits
+Contributing
+PRs and improvements welcome. The best way to help: contribute a new domain skill under agent-workspace/domain_skills for a site or task you use often (LinkedIn outreach, ordering on Amazon, filing expenses, etc). Each skill teaches the agent the selectors, flows, and edge cases it would otherwise have to rediscover.
+Skills are written by the harness, not by you. Just run your task with the agent -- when it figures some obvious out, it files the skill itself (see SKILL.md). Please don't hand-author skill files; agent-generated code is what actually works in the browser.
+Open a PR with the generated agent-workspace/domain-skills/&lt;site&gt;/ folder -- small and focused is best.</div>
+
+<a class="original-link" href="https://www.instagram.com/reel/DYREjUcp7S3/?igsh=ZW43OTF4amliNjZ4">View original on Instagram Reel &rarr;</a>
+
+<div class="footer">Auto-generated by ClaudeClaw bookmark enrichment</div>
+</body>
+</html>
