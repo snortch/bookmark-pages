@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello everyone. Thank you for being for being here today. I'm pretty much...</title>
+<meta name="description" content="Hello everyone. Thank you for being for being here today.">
+<meta property="og:title" content="Hello everyone. Thank you for being for being here today. I'm pretty much...">
+<meta property="og:description" content="Hello everyone. Thank you for being for being here today.">
+<meta property="og:type" content="article">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, system-ui, Georgia, serif; max-width: 680px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.7; background: #fff; }
+.source-badge { display: inline-block; background: #f0f0f0; color: #666; font-size: 0.75em; padding: 3px 10px; border-radius: 12px; margin-bottom: 16px; text-decoration: none; }
+.source-badge:hover { background: #e0e0e0; }
+h1 { font-size: 1.5em; font-weight: 600; margin-bottom: 8px; line-height: 1.3; }
+.meta { color: #888; font-size: 0.85em; margin-bottom: 24px; }
+.summary { background: #f8f8f8; border-left: 3px solid #4A90D9; padding: 16px 20px; margin: 24px 0; font-size: 0.95em; border-radius: 0 4px 4px 0; }
+.summary h2 { font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; color: #4A90D9; margin-bottom: 8px; }
+.transcript { font-size: 1.05em; white-space: pre-wrap; margin-top: 24px; }
+.slide-card { background: #fafafa; border: 1px solid #e8e8e8; border-radius: 8px; padding: 20px; margin: 16px 0; position: relative; }
+.slide-number { position: absolute; top: 12px; right: 16px; background: #4A90D9; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8em; font-weight: 600; }
+.slide-content { font-size: 1em; line-height: 1.7; white-space: pre-wrap; }
+.caption-block { margin: 20px 0; padding: 16px 0; border-bottom: 1px solid #eee; }
+.caption-label { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin-bottom: 6px; }
+.gallery { margin-top: 40px; padding-top: 24px; border-top: 1px solid #eee; }
+.gallery-heading { font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin-bottom: 12px; }
+.gallery img { width: 100%; max-width: 680px; border-radius: 8px; margin-bottom: 16px; display: block; }
+.original-link { display: block; margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 0.85em; color: #4A90D9; text-decoration: none; }
+.original-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #eee; font-size: 0.75em; color: #aaa; }
+</style>
+</head>
+<body>
+<a class="source-badge" href="https://www.youtube.com/watch?feature=youtu.be&amp;v=SqHsS737CeA">Social Media</a>
+
+<h1>Hello everyone. Thank you for being for being here today. I'm pretty much...</h1>
+<p class="meta">video transcript (enriched by ClaudeClaw)</p>
+
+<div class="summary">
+<h2>Summary</h2>
+<p>Hello everyone. Thank you for being for being here today.</p>
+</div>
+
+<div class="transcript">Hello everyone. Thank you for being for being here today. I'm pretty much excited to have this session with you. I know we are almost at the end of the event. So thank you for bear with us. So just to start, let me to introduce myself. I'm Ivan Nardini. I'm a developer advocate at Google Cloud working on building content in partnership with Anthropic. And in order to start this presentation today, I just want to ask a very simple a very simple question. So how many of you in the last week use any AI tool to code or build application? Okay, the majority. How many of you use the same AI tool to build and deploy application on Google Cloud? Yeah, just a few of them. So the the goal here today is just try to make it better. So in these in this demo, what I'm going to show you is how you can use Cloud on Google Cloud to build and deploy application end to end. And in order to do that, I'm going to wear five different hats. And we will start from imagine the use case, right? Imagine the scenario. You are an enterprise context. In an enterprise context, you probably have a team like the one that we are visualizing here that it's engaged to build a new feature or a new product. So starting from the left, you probably have a PM. Some of you in this room are PMs. And the PM might have an idea of how to improve a particular product or how to implement a feature. And starting from this idea, he share this idea with a UI UX design which allows him to design the idea, to visualize the idea. And after the idea start getting a shape, then the idea is sent to a software engineer that essentially start developing the core logic behind this idea in order to ship and make the application accessible or the feature the future feature accessible to everyone. And but before to ship it, in order to be confident on what you are releasing, you probably have to pass a security review. So that's why you have a role like the security engineer that will allows you to be confident in the release. And finally, once the application gets released, you probably have a data persona like a growth marketer or a data analyst that analyze the data that are collected through the app in order to generate insight and produce feedback to the PM in a way that the product or the feature itself gets improved. So these are kind of you know, all the personas that in a simple way we can imagine are involved in the software development life cycle. Now with respect to these personas, Claude could the Anthropic's coding agent augment all of them providing several components that we are going to use today. So as I said, in the for the remaining part of this presentation, I'm going to put the hat of all these personas. I'm going to show you how you can use these Claude cool components together with Claude on Google Cloud in order to ship, build and ship a very simple a feedback application that at the end of the presentation we are going to use to rate my my performance here. But before to start building, of course you need to set up and the Claude code that we are going to use. And I'm so excited and so proud that we work together with Anthropic to make this process of setting up Code in order to use model on Google Cloud in a very simple way, in a very straightforward way. So, you have multiple methods to use cloud models on Google Cloud in Code, but the simplest one, the faster one is using the application default credential, which automatically finds your credential, for example, the user one, and based on the environment that you're going to use. And as you can see in this representation, recently Code also introduced this wizard that will simply allows you to detect your project and your region where the models are served, and um check which models are available in your project, and like you to pin them in order to start building your application. At this point, like probably you're familiar with this, and you're wondering, &quot;Okay, but what's what is different to use just Code Code with with cloud models? Why using cloud on GCP, on Google Cloud?&quot; So, there are many reason why you want to do why you want to do this. So, first of all, because you pay for what you use. So, the usage of a cloud models on Google Cloud is per token, so you don't receive a message message cap. And also, if you're building a enterprise application that needs to go to production, you can always access to what is called provisioning throughput, which essentially will reserve some throughput for you in order to build this kind of application. Um the other important reason why you want to consider like cloud on Google Cloud is as I said, the setup is pretty straightforward using the ADC. You don't have API to rotate, or you know, environment variable to set in some sense. So, it's a it's a happy journey in in the with respect to this aspect. You can access model in your project with your own you know, policies set and also like the data stays in your project while you are interacting with the Cloud Code. And model are served in multiple regions. So, you have global endpoint, you have regional endpoint depending on you know, the availability that you that you need. And as a Google Cloud talking about availability, we have very great availability service that standards that will allows you to use Cloud and on one of the most performing infrastructure that you can find in the in the market. So, these are all some of the main reason why you want to consider Cloud on Google Cloud especially in an enterprise contest. So, now that you have like few reasons of why using Cloud on Google Cloud, we are ready to build. And so, as I said, I will start wearing the hat of a PM. So, imagine that you just join the company or maybe you're already part of the company. You have you you want to improve our services, you want to implement a new features with respect to a particular product. What it was happening in the past is that you have the idea, you go to a UI UX designer and you as…</div>
+
+
+
+<a class="original-link" href="https://www.youtube.com/watch?feature=youtu.be&amp;v=SqHsS737CeA">View original on Social Media &rarr;</a>
+
+<div class="footer">Auto-generated by ClaudeClaw bookmark enrichment</div>
+</body>
+</html>
