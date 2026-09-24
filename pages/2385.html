@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Let's cover 10 pro tips for working with the cursor agent. So, I've got...</title>
+<meta name="description" content="Let's cover 10 pro tips for working with the cursor agent. So, I've got cursor open and my agent on the right.">
+<meta property="og:title" content="Let's cover 10 pro tips for working with the cursor agent. So, I've got...">
+<meta property="og:description" content="Let's cover 10 pro tips for working with the cursor agent. So, I've got cursor open and my agent on the right.">
+<meta property="og:type" content="article">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, system-ui, Georgia, serif; max-width: 680px; margin: 0 auto; padding: 32px 20px; color: #1a1a1a; line-height: 1.7; background: #fff; }
+.source-badge { display: inline-block; background: #f0f0f0; color: #666; font-size: 0.75em; padding: 3px 10px; border-radius: 12px; margin-bottom: 16px; text-decoration: none; }
+.source-badge:hover { background: #e0e0e0; }
+h1 { font-size: 1.5em; font-weight: 600; margin-bottom: 8px; line-height: 1.3; }
+.meta { color: #888; font-size: 0.85em; margin-bottom: 24px; }
+.summary { background: #f8f8f8; border-left: 3px solid #4A90D9; padding: 16px 20px; margin: 24px 0; font-size: 0.95em; border-radius: 0 4px 4px 0; }
+.summary h2 { font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; color: #4A90D9; margin-bottom: 8px; }
+.transcript { font-size: 1.05em; white-space: pre-wrap; margin-top: 24px; }
+.slide-card { background: #fafafa; border: 1px solid #e8e8e8; border-radius: 8px; padding: 20px; margin: 16px 0; position: relative; }
+.slide-number { position: absolute; top: 12px; right: 16px; background: #4A90D9; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8em; font-weight: 600; }
+.slide-content { font-size: 1em; line-height: 1.7; white-space: pre-wrap; }
+.caption-block { margin: 20px 0; padding: 16px 0; border-bottom: 1px solid #eee; }
+.caption-label { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin-bottom: 6px; }
+.gallery { margin-top: 40px; padding-top: 24px; border-top: 1px solid #eee; }
+.gallery-heading { font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin-bottom: 12px; }
+.gallery img { width: 100%; max-width: 680px; border-radius: 8px; margin-bottom: 16px; display: block; }
+.original-link { display: block; margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; font-size: 0.85em; color: #4A90D9; text-decoration: none; }
+.original-link:hover { text-decoration: underline; }
+.footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #eee; font-size: 0.75em; color: #aaa; }
+</style>
+</head>
+<body>
+<a class="source-badge" href="https://youtube.com/watch?v=WVeYLlKOWc0&amp;si=uCZy2WLhqj0fUHGu">Social Media</a>
+
+<h1>Let's cover 10 pro tips for working with the cursor agent. So, I've got...</h1>
+<p class="meta">video transcript (enriched by ClaudeClaw)</p>
+
+<div class="summary">
+<h2>Summary</h2>
+<p>Let's cover 10 pro tips for working with the cursor agent. So, I've got cursor open and my agent on the right.</p>
+</div>
+
+<div class="transcript">Let's cover 10 pro tips for working with the cursor agent. So, I've got cursor open and my agent on the right. And the first tip is to use plan mode. So, in the agent input, I'm going to hit command N to make a new chat. And then I can hit shift tab to switch and toggle into plan mode. Now, what plan mode can do is it can actually go look at my codebase, research and understand how my app is set up, and then help me create a highquality plan to implement a feature. So, this is on my personal website. I'm going to say let's make a new page to show my top artists on Spotify and I'm going to hit enter. Now, I've already set up Spotify in my app and I'm using it to display the track that I'm last listened to on my homepage. So, we're going to see that it's planning the next moves here and it's going to come back to us with a few questions to help clarify what the implementation's going to look like. So, it reads my current Spotify implementation. It reads some of the code that I've already set up and it's going to help me figure out how I would actually add this feature. So, let's do uh slash we'll do slash music and then we're going to do let's do top 10. Yeah, top 10 works. Time range. Um let's do all time and last three months. Two buckets. Sure. And then for displaying what we want to show, we can do um use your best judgment. I'm just going to see what the model comes up with and we can change it and tweak it from there. So, it's starting to make the plan and we see as it's making the plan, it creates a new markdown file and it's giving some details on what needs to be created. It's calling specific components and files and referencing them in our application. And it even makes some to-dos that we can use to implement the feature. So, this seems fine. We can just read through here. It looks okay. If I wanted to make any changes, I could go in here and say, um, we don't need a brief intro about music taste. So, we can get rid of that. I'll save the plan. The to-dos seemed fine. Okay. So, now if this looks good and we're happy with it, we can hit build. And build is going to accept this plan. And then for our given model, which I'm using claude 4.5 sonnet here, it's going to go and actually implement the plan. So let's let this cook. Okay, so the model finished, but it actually didn't work. I tried to load the page and I got a permissions error. So I needed to reauthorize my Spotify token to have the additional permissions. So I just pasted in the error I saw and now it works. So if I go back to my app, I now have this list of my top artists. So thank you plan mode. The second pro tip I want to show is accessing the context menu and specifically a feature at branch. So I'm going to go ahead and command shiftp create branch and we'll call this top artist. And then inside of our chat window I'm going to make a new chat. And in this new chat if you type the at@ symbol. So let's just do that. What you get is this menu with all these different options. And one of them is get and specifically at branch. So on this branch, what I want to do is review all of the changes and see if there are any issues. So I'll kick that off. Now, inside of that menu, there's actually a lot of stuff. I can just pull it up here. We have files and folders. You can reference public documentation, past chats, llinter errors, uh all sorts of different things, especially tagging in specific files or folders that will go into the context. So if you know, for example, you're going to use this Spotify file, you can tag that into the context and put it in the context window for working with an agent. So I find these get commands pretty helpful. And it looks like the code seems pretty good. We're having the AI review the AI generated code, but maybe there's one issue with the cache times that are different. Nice. Okay, so overall seems pretty good. That was pretty helpful. The third pro tip I want to show is creating custom commands. So in the cursor folder, inside of here, I'm going to make a new folder and we're going to call it commands. And inside of here, I can add in markdown files as commands. So we're going to call this one prd. And inside of here, I can I can call this file whatever I want. I can put whatever prompt I want in here. So, we're going to use this to make PRs. So, uh your job is to create a PR with a descriptive title. Always use the GitHub CLI. Now, we could add in specific rules or specific guidelines, commit guidelines in here as well, but um let's also say if you haven't already made a commit, do that first. Great. So, we have this command. Now, over here in the agent panel, I can do slash and it's going to show up as an option as a custom command I can run. So, slash PR and we even see this little hover of what the custom prompt here is. So, slashpr. Let's run that and see what happens. Now, my hope here is it will use a shell command to use the GitHub CLI to go ahead and first make a commit and then make a PR. So, it's going to check and get status here. Great. We have some, if I go over to my source control view, got some stuff on this branch, uh, and some changes that we need to commit. So, it's going to go ahead and look at the changes, try to figure out what the PR is about, and then make this change for us. Okay, so this just finished and I see I have a link to my new poll request. Nice. The fourth agent pro tip is that you can pass images to the agent. So we have our list of top artists, but maybe we want it to look more like the Spotify uh wrapped. So let's copy this image. We can go back to here and paste it in so we can see what the image looks like here. And we're going to say make the top artists and music page look closer to the image with uh artist photos please. Now this is not scientific but I think if you add please and thank you the models perform better. You are burning more energy in the data centers. So, you know, there's some trade-offs here, but we're going to see if please an…</div>
+
+
+
+<a class="original-link" href="https://youtube.com/watch?v=WVeYLlKOWc0&amp;si=uCZy2WLhqj0fUHGu">View original on Social Media &rarr;</a>
+
+<div class="footer">Auto-generated by ClaudeClaw bookmark enrichment</div>
+</body>
+</html>
